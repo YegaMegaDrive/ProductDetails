@@ -3,3 +3,8 @@ server:
 spring:
   main:
     allow-circular-references: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/auth/realms/mBank
